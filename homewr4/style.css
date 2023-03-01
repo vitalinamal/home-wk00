@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(28, 82, 221, 0.56);
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    padding-top: 50px;
+}
+
+.navbar {
+    float: right;
+    padding-top: 48px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 35px;
+    color: #FFFFFF;
+    padding-right: 30px;
+}
+
+.navbar ul li a:hover {
+    color: #cac5c5;
+}
+
+.navbar ul li button {
+    background: linear-gradient(90deg, #345AA4 -28.35%, rgba(63, 0, 156, 0) 153.96%);
+    border-radius: 13px;
+    padding: 12px 25px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #E5E5E5;
+    cursor: pointer;
+}
+
+.navbar ul li button:hover {
+    background: linear-gradient(90deg, #173268 -28.35%, rgba(63, 0, 156, 0) 153.96%);
+}
+
+.left {
+    padding-top: 100px;
+    float: left;
+}
+
+.left h1 {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 82px;
+    color: #FFFFFF;
+}
+
+.left h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #E5E5E5;
+    margin-top: -36px;
+}
+
+.btn button {
+    background: linear-gradient(90deg, #345AA4 0%, rgba(63, 0, 156, 0.92) 164.26%);
+    border-radius: 13px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #E5E5E5;
+    padding: 15px 40px;
+    cursor: pointer;
+
+}
+
+.btn button:hover {
+    background: linear-gradient(90deg, #173268 0%, rgba(63, 0, 156, 0.92) 164.26%);
+}
+
+.right {
+    float: right;
+    padding-top: 80px;
+}
+
+.right img {
+    width: 600px;
+    height: auto;
+}
