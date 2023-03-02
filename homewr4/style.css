@@ -7,19 +7,27 @@ body {
 
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
 }
 
+.header {
+    padding-top: 50px;
+}
+
 .logo {
     float: left;
-    padding-top: 50px;
 }
 
 .navbar {
     float: right;
-    padding-top: 48px;
 }
 
 .navbar ul li {
@@ -73,6 +81,7 @@ body {
     font-size: 70px;
     line-height: 82px;
     color: #FFFFFF;
+    margin-bottom: 0;
 }
 
 .left h4 {
@@ -82,7 +91,7 @@ body {
     font-size: 36px;
     line-height: 42px;
     color: #E5E5E5;
-    margin-top: -36px;
+    margin-top: 0;
 }
 
 .btn button {
