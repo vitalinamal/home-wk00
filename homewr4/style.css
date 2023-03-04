@@ -18,16 +18,16 @@ body {
     margin: 0 auto;
 }
 
-.header {
-    padding-top: 50px;
-}
-
 .logo {
+    /* border: 1px solid rgb(0, 21, 255); */
     float: left;
+    padding-top: 56px;
 }
 
 .navbar {
     float: right;
+    padding-top: 47px;
+    /* border: 1px solid rgb(30, 255, 0); */
 }
 
 .navbar ul li {
