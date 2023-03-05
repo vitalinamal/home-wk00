@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242527;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    padding-top: 56px;
+}
+
+.navbar {
+    float: right;
+    padding-top: 47px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar ul li:nth-child(-n+5) {
+    background-image: url(./img/Group.png);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
+#database {
+    background-image: url(./img/Line.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 60%;
+    padding-bottom: 5px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: 'Clab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FBFCFF;
+    padding-right: 50px;
+}
+
+.navbar ul li a:hover {
+    color: #cac5c5;
+}
+
+.navbar ul li button {
+    background: #242527;
+    border: 1px solid #E4F5FF;
+    font-family: 'Clab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 25px;
+    color: #E4F5FF;
+    cursor: pointer;
+    padding: 10px 25px;
+    margin-left: 10px;
+}
+
+.navbar ul li button:hover {
+    background: linear-gradient(90deg, #5b606b -28.35%, rgba(63, 0, 156, 0) 153.96%);
+}
+
+.main {
+    background-image: url(./img/Vector.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 450px auto;
+    height: 500px;
+}
+
+.text {
+    padding-top: 150px;
+    padding-left: 50px;
+}
+
+.text h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    color: #E4F5FF;
+    position: relative;
+}
+
+.text h1::after {
+    content: "";
+    background-image: url(./img/Group2.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    background-position: right center;
+    padding-left: 20px;
+}
+
+.text p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #E4F5FF;
+}
+
+.options {
+    /* width: 100%; */
+    padding-top: 40px;
+}
+
+.options ul {
+    /* width: 100%; */
+}
+
+.options ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 15px;
+
+}
+
+.options ul li a {
+    font-family: 'Clab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 25px;
+    color: #E4F5FF;
+    text-decoration: none;
+}
+
+#all {
+    background-image: url(./img/Line1.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100%;
+    padding-bottom: 5px;
+}
+
+.options ul li::after {
+    content: "//";
+    color: #E4F5FF;
+    padding-left: 17px;
+    font-size: 20px;
+}
+
+.options ul>li:last-child::after {
+    content: '';
+}
+
+.profiles {
+    padding-top: 30px;
+}
+
+.profiles .shared {
+    width: 240px;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    height: 307px;
+    float: left;
+    background-size: cover;
+    /* border: 2px solid red; */
+    filter: drop-shadow(0px 2px 16px rgba(228, 245, 255, 0.5));
+    border-radius: 16px;
+    padding: 157px 16px 0px 16px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.profiles .Marjorie {
+    background-image: url(./img/Rectangle1.png);
+}
+
+.profiles .Leslie {
+    background-image: url(./img/Rectangle2.png);
+}
+
+.profiles .Rosemary {
+    background-image: url(./img/Rectangle3.png);
+}
+
+.profiles .Lee {
+    background-image: url(./img/Rectangle4.png);
+}
+
+.profiles .Tyrone {
+    background-image: url(./img/Rectangle5.png);
+}
+
+
+.profiles .Angel {
+    background-image: url(./img/Rectangle6.png);
+}
+
+.profiles .Soham {
+    background-image: url(./img/Rectangle7.png);
+}
+
+.profiles .Marjorie-Henry {
+    background-image: url(./img/Rectangle8.png);
+}
+
+.profiles .Brandie {
+    background-image: url(./img/Rectangle9.png);
+}
+
+.profiles .Brooklyn {
+    background-image: url(./img/Rectangle10.png);
+}
+
+.profiles .Wade {
+    background-image: url(./img/Rectangle11.png);
+}
+
+.profiles .Shane {
+    background-image: url(./img/Rectangle12.png);
+}
+
+.profiles .Ralph {
+    background-image: url(./img/Rectangle13.png);
+}
+
+.profiles .Theresa {
+    background-image: url(./img/Rectangle14.png);
+}
+
+.profiles .Evan {
+    background-image: url(./img/Rectangle15.png);
+}
+
+.profiles .info {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0px 0px 16px 16px;
+    /* margin: 193px 15px 10px 15px; */
+    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.profiles .info h2 {
+    font-family: 'Clab';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E4F5FF;
+}
+
+.profiles .info p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #E4F5FF;
+    line-height: 10px;
+}
