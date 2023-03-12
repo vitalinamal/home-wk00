@@ -1,10 +1,14 @@
 * {
     box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-style: normal;
 }
 
 :root {
     --title-color: #FFC178;
     --main-color: white;
+    --title-size: 48px;
+    --paragraph-size: 12px;
 }
 
 body {
@@ -14,6 +18,7 @@ body {
 .container {
     margin: 0 auto;
     height: 1300px;
+    width: 100%;
     background-repeat: no-repeat;
     background-image: url(./img/Background.png);
     background-size: 100%;
@@ -32,6 +37,10 @@ body {
     padding: 30px 50px 0px 50px;
 }
 
+.header .logo a {
+    display: inline-block;
+}
+
 
 
 .navbar ul li {
@@ -42,11 +51,9 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.5vw;
+    line-height: 1.5;
     color: #FFFFFF;
     padding-right: 50px;
 }
@@ -56,28 +63,26 @@ body {
 }
 
 
-.search a {
-    font-family: 'Open Sans';
-    font-style: normal;
+.search input[type=search] {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
     font-weight: 400;
-    font-size: 17px;
-    line-height: 23px;
+    font-size: 1.1vw;
+    line-height: 1.4;
     color: #FFFFFF;
-    text-decoration: none;
-    padding-left: 30px;
-    position: relative;
+    background-image: url(./img/search.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 6px 20px 12px 40px;
+    width: 130px;
 }
 
-.search a::before {
-    content: "";
-    background-image: url(./img/search.png);
-    background-repeat: no-repeat;
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    left: 0;
-    top: 5px;
+
+.search input[type=search]::placeholder {
+    color: #FFFFFF;
+
 }
+
 
 .main {
     display: flex;
@@ -98,11 +103,9 @@ body {
 }
 
 .follow .text p {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.3vw;
+    line-height: 1.5;
     color: #FFFFFF;
     writing-mode: vertical-rl;
 }
@@ -116,7 +119,7 @@ body {
 
 .links li .fa-brands {
     color: white;
-    font-size: 18px;
+    font-size: 1.3vw;
     padding-bottom: 20px;
 }
 
@@ -134,11 +137,9 @@ body {
 }
 
 .title h4 {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.2vw;
+    line-height: 1.5;
     letter-spacing: 6px;
     text-transform: uppercase;
     color: var(--title-color);
@@ -151,7 +152,7 @@ body {
     background-color: var(--title-color);
     display: block;
     height: 2px;
-    width: 60px;
+    width: 6%;
     position: absolute;
     left: 0;
     top: 50%;
@@ -159,10 +160,8 @@ body {
 }
 
 .title h1 {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 500;
-    font-size: 80px;
+    font-size: 5vw;
     line-height: 100px;
     text-transform: capitalize;
     color: var(--main-color);
@@ -181,11 +180,9 @@ body {
 
 .scroll a {
     text-decoration: none;
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.2vw;
+    line-height: 1.5;
     color: #FFFFFF;
     position: relative;
     padding-right: 30px;
@@ -198,7 +195,7 @@ body {
     position: absolute;
     background-repeat: no-repeat;
     height: 30px;
-    width: 20px;
+    width: 15%;
     right: 0;
     top: 2px;
 
@@ -210,7 +207,7 @@ body {
 
 
 .container-flex {
-    width: 1200px;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -218,30 +215,41 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: -150px;
+    top: -200px;
 }
 
 .nusa-flex-left {
-    flex: 70%;
+    flex: 40%;
+}
+
+.size {
+    width: 90%;
+    height: auto;
+
 }
 
 .nusa-flex-right {
-    flex: 30%;
+    flex: 60%;
 
 }
 
-
-
 .nusa-flex-left img {
-    width: 500px;
+    width: 100%;
     height: auto;
 }
 
+.smaller-block {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.nusa-flex-right .smaller-block {
+    padding-top: 10px;
+}
+
 .nusa-flex-right h4 {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.2vw;
     line-height: 20px;
     letter-spacing: 6px;
     text-transform: uppercase;
@@ -255,18 +263,16 @@ body {
     background-color: var(--title-color);
     display: block;
     height: 2px;
-    width: 60px;
+    width: 10%;
     position: absolute;
     left: 0;
     top: 50%;
 
 }
 
-.nusa-flex-right h1 {
-    font-family: 'Open Sans';
-    font-style: normal;
+h1 {
     font-weight: 700;
-    font-size: 58px;
+    font-size: 3.5vw;
     line-height: 87px;
     color: var(--main-color);
     margin-top: 0;
@@ -276,11 +282,9 @@ body {
 
 .nusa-flex-right a {
     text-decoration: none;
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.2vw;
+    line-height: 1.5;
     color: #FBD784;
     position: relative;
     padding-right: 30px;
@@ -291,18 +295,15 @@ body {
     background-image: url(./img/line_right.png);
     background-repeat: no-repeat;
     height: 20px;
-    width: 25px;
+    width: 20%;
     position: absolute;
     right: 0;
     top: 6px;
 }
 
 .nusa-flex-right p {
-    width: 500px;
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1vw;
     line-height: 32px;
     color: #FFFFFF;
 
@@ -342,11 +343,9 @@ body {
 }
 
 .second .line h4 {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 1.3vw;
+    line-height: 1.5;
     letter-spacing: 6px;
     text-transform: uppercase;
     color: var(--title-color);
@@ -362,7 +361,7 @@ body {
     background-color: var(--title-color);
     display: block;
     height: 2px;
-    width: 60px;
+    width: 20%;
     position: absolute;
     left: 0;
     top: 50%;
@@ -373,21 +372,10 @@ body {
     background-color: var(--title-color);
     display: block;
     height: 2px;
-    width: 60px;
+    width: 20%;
     position: absolute;
     right: 0;
     top: 50%;
-}
-
-.second h1 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 58px;
-    line-height: 87px;
-    color: var(--main-color);
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .second .text {
@@ -396,11 +384,9 @@ body {
 }
 
 .second .text p {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 32px;
+    font-size: 1vw;
+    line-height: 1.9;
     text-align: center;
     color: var(--main-color);
 
@@ -408,11 +394,9 @@ body {
 
 .second a {
     text-decoration: none;
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.2vw;
+    line-height: 1.5;
     color: #FBD784;
     padding-right: 30px;
     position: relative;
@@ -423,7 +407,7 @@ body {
     background-image: url(./img/line_right.png);
     background-repeat: no-repeat;
     height: 20px;
-    width: 25px;
+    width: 20%;
     position: absolute;
     right: 0;
     top: 6px;
@@ -442,25 +426,22 @@ body {
 
 
 .culture-flex-left {
-    flex: 70%;
-    padding: 100px 130px 0px 40px;
+    flex: 60%;
 }
 
 .culture-flex-right {
-    flex: 30%;
+    flex: 40%;
 }
 
 .culture-flex-right img {
-    width: 500px;
+    width: 100%;
     height: auto;
 }
 
 .culture-flex-left h4 {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 1.1vw;
+    line-height: 1.5;
     letter-spacing: 6px;
     text-transform: uppercase;
     color: var(--title-color);
@@ -468,44 +449,33 @@ body {
     position: relative;
 }
 
+.culture-flex-left .smaller-block {
+    padding-top: 40px;
+}
+
 .culture-flex-left h4::before {
     content: "";
     background-color: var(--title-color);
-    display: block;
+    display: inline-block;
     height: 2px;
-    width: 60px;
+    width: 10%;
     position: absolute;
     left: 0;
     top: 50%;
 }
 
-.culture-flex-left h1 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 87px;
-    color: var(--main-color);
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .culture-flex-left p {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 32px;
+    font-size: 1vw;
+    line-height: 1.9;
     color: var(--main-color);
 
 }
 
 .culture-flex-left a {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
     color: #FBD784;
     text-decoration: none;
     position: relative;
@@ -517,7 +487,7 @@ body {
     background-image: url(./img/line_right.png);
     background-repeat: no-repeat;
     height: 20px;
-    width: 25px;
+    width: 20%;
     position: absolute;
     right: 0;
     top: 6px;
@@ -531,11 +501,8 @@ body {
 }
 
 .qwery h1 {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 65px;
+    font-size: 2.5vw;
     letter-spacing: 0.01em;
     text-transform: capitalize;
     color: white;
@@ -547,8 +514,7 @@ body {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 29px;
+    font-size: 1.5vw;
     letter-spacing: -0.3px;
     color: #FFFFFF;
     display: inline-block;
@@ -572,7 +538,7 @@ body {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1vw;
     line-height: 22px;
     color: #000000;
 }
@@ -612,21 +578,17 @@ body {
 }
 
 .email h3 {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
+    font-size: 2vw;
+    line-height: 1.9;
     letter-spacing: -0.3px;
     color: #FFFFFF;
     margin-top: 0;
 }
 
 #same {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.5vw;
     line-height: 0px;
     letter-spacing: -0.231818px;
     color: #FFD1A0;
@@ -634,10 +596,8 @@ body {
 
 #links li a {
     text-decoration: none;
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 1.3vw;
     line-height: 0px;
     letter-spacing: -0.204545px;
     color: #FFFFFF;
@@ -659,15 +619,16 @@ body {
 }
 
 .footer .email form input[type=email] {
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
     border: none;
-    font-size: 12px;
-    padding: 24px 0px;
+    padding: 23px 0px;
     width: 60%;
     float: left;
     background-color: black;
     border-bottom: 1px solid rgb(185, 181, 181);
+    color: white;
+    font-size: 0.94vw;
+    outline: none;
+    height: 60px;
 
 }
 
@@ -675,20 +636,21 @@ body {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 1.1vw;
     letter-spacing: -0.204545px;
     color: #9c9696;
     padding-left: 10px;
 }
 
 .footer button {
-    float: left;
+    width: 12%;
+    /* float: left; */
     background-color: #FFA343;
     border-radius: 8px 8px 0px 0px;
     border: none;
     border-bottom: 1px solid rgb(185, 181, 181);
     cursor: pointer;
+    height: 60px;
 }
 
 .footer button:hover {
@@ -696,7 +658,11 @@ body {
 }
 
 .footer button .fa-solid {
-    padding: 22px;
+    line-height: 3.7;
+}
+
+.wrapper {
+    width: 100%;
 }
 
 .end {
@@ -711,7 +677,7 @@ body {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1.1vw;
     line-height: 20px;
     letter-spacing: -0.204545px;
     color: #FFFFFF;
@@ -722,7 +688,7 @@ body {
 
 .end-right .fa-brands {
     color: white;
-    font-size: 20px;
+    font-size: 1.3vw;
     padding-right: 30px;
 }
 
@@ -735,12 +701,92 @@ body {
 }
 
 .copyright p {
-    font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1vw;
     line-height: 32px;
     text-align: center;
     color: #FFFFFF;
     opacity: 0.5;
 }
+
+
+/* @media(max-width: 768px) {
+
+    .container-flex {
+        width: 100%;
+    }
+
+    .header {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navbar {
+        padding-right: 35px;
+    }
+
+    .nusa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nusa-flex-left {
+        flex: 100%;
+    }
+
+    .nusa-flex-left .size {
+        width: 100%;
+    }
+
+    .nusa-flex-right {
+        flex: 100%;
+        text-align: center;
+    }
+
+    .culture {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .culture-flex-left {
+        flex: 100%;
+        text-align: center;
+    }
+
+    .culture-flex-right img {
+        width: 100%;
+    }
+
+    .get-started {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer .services {
+        margin-left: 40px;
+        padding-top: 50px;
+    }
+
+    .footer .about {
+        padding-left: 0px;
+    }
+
+    .footer .email form input[type=email] {
+        margin-left: 35px;
+    }
+
+    .end {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .end-right .fa-brands {
+
+        padding-top: 30px;
+    }
+} */
