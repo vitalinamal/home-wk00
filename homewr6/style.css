@@ -712,13 +712,35 @@ h1 {
 
 @media(max-width: 768px) {
 
-    .container-flex {
-        width: 100%;
+    .container {
+        height: 800px;
     }
+
+    /* .container-flex {
+        width: 100%;
+    } */
 
     .header {
         align-items: center;
         flex-direction: column;
+    }
+
+    .title h4 {
+        padding-left: 40px;
+    }
+
+    .links ul li {
+
+        padding-left: 10px;
+
+    }
+
+    .links li .fa-brands {
+        padding-bottom: 10px;
+    }
+
+    .follow .text {
+        padding-bottom: 0px;
     }
 
     .navbar {
@@ -734,8 +756,9 @@ h1 {
         flex: 100%;
     }
 
-    .nusa-flex-left .size {
-        width: 100%;
+    .size {
+        width: 70%;
+        margin: 0 auto;
     }
 
     .nusa-flex-right {
@@ -743,9 +766,67 @@ h1 {
         text-align: center;
     }
 
+    .nusa-flex-right h4 {
+        padding-left: 0px;
+        padding-top: 1px;
+    }
+
+    .nusa-flex-right h4::before {
+        height: 1px;
+        top: 53%;
+        margin-left: 35px;
+    }
+
+    .nusa-flex-right a::after {
+        width: 40%;
+        top: 3px;
+        background-size: 35%;
+    }
+
+    .container-flex .nusa {
+        height: 350px;
+    }
+
     .culture {
         flex-direction: column-reverse;
         align-items: center;
+        padding-top: 0px;
+    }
+
+    .second {
+        bottom: 100px;
+    }
+
+    .second .line h4::before {
+        height: 1px;
+        left: -6px;
+    }
+
+    .second .line h4::after {
+        height: 1px;
+    }
+
+    .second a::after {
+        width: 40%;
+        top: 3px;
+        background-size: 35%;
+    }
+
+
+    .bromo {
+        height: 500px;
+    }
+
+    .bromo img {
+        width: 50%;
+    }
+
+    .bromo .left {
+        bottom: 230px;
+    }
+
+    .bromo .right {
+        bottom: 230px;
     }
 
     .culture-flex-left {
@@ -753,34 +834,86 @@ h1 {
         text-align: center;
     }
 
-    .culture-flex-right img {
-        width: 100%;
+    .culture-flex-left h4 {
+        padding-left: 0px;
+    }
+
+    .culture-flex-left h4::before {
+        height: 1px;
+        left: 37px;
+        top: 45%;
+    }
+
+    .culture-flex-left a::after {
+        width: 40%;
+        top: 3px;
+        background-size: 35%;
+    }
+
+    .row button {
+        padding: 0px 10px;
+    }
+
+    .row a {
+        position: relative;
+        top: -4px;
     }
 
     .get-started {
         align-items: center;
         flex-direction: column;
-    }
-
-    .footer {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .footer .services {
-        margin-left: 40px;
         padding-top: 50px;
     }
 
-    .footer .about {
-        padding-left: 0px;
+    .footer {
+        /* align-items: center; */
+        display: block;
     }
 
+    .footer .email {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer .email h3 {
+        text-align: center;
+    }
+
+
     .footer .email form input[type=email] {
-        margin-left: 35px;
+        margin-left: 25%;
+        width: 40%;
+        padding: 0;
+        height: 25px;
+    }
+
+    .footer button {
+        height: 25px;
+        width: 7%;
+    }
+
+    .footer button .fa-solid {
+        line-height: 0;
+        font-size: 1.5vw;
+    }
+
+    .footer .services {
+        display: inline-block;
+        width: 30%;
+    }
+
+    .footer .about {
+        display: inline-block;
+        width: 30%;
+    }
+
+    .footer .help {
+        display: inline-block;
+        width: 30%;
     }
 
     .end {
+        padding-top: 50px;
         align-items: center;
         flex-direction: column;
     }
@@ -789,4 +922,16 @@ h1 {
 
         padding-top: 30px;
     }
+
+    .search input[type=search] {
+        background-position: 30px 7px;
+        background-size: 5%;
+    }
+
+    .scroll a::after {
+        width: 35%;
+        background-size: 25%;
+    }
 }
+
+@media(max-width: 576px) {}
