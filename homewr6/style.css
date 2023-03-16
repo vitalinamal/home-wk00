@@ -133,6 +133,7 @@ body {
     flex: 80%;
     padding-top: 100px;
     padding-left: 70px;
+    padding-right: 100px;
 
 }
 
@@ -185,7 +186,7 @@ body {
     line-height: 1.5;
     color: #FFFFFF;
     position: relative;
-    padding-right: 30px;
+    padding-right: 40px;
 
 }
 
@@ -195,9 +196,10 @@ body {
     position: absolute;
     background-repeat: no-repeat;
     height: 30px;
-    width: 15%;
-    right: 0;
+    width: 50%;
+    right: -40px;
     top: 2px;
+    background-size: 20%;
 
 }
 
@@ -219,11 +221,11 @@ body {
 }
 
 .nusa-flex-left {
-    flex: 40%;
+    flex: 30%;
 }
 
 .size {
-    width: 90%;
+    width: 100%;
     height: auto;
 
 }
@@ -287,7 +289,7 @@ h1 {
     line-height: 1.5;
     color: #FBD784;
     position: relative;
-    padding-right: 30px;
+    padding-right: 60px;
 }
 
 .nusa-flex-right a::after {
@@ -295,10 +297,11 @@ h1 {
     background-image: url(./img/line_right.png);
     background-repeat: no-repeat;
     height: 20px;
-    width: 20%;
+    width: 50px;
     position: absolute;
     right: 0;
     top: 6px;
+    background-size: 40%;
 }
 
 .nusa-flex-right p {
@@ -398,7 +401,7 @@ h1 {
     font-size: 1.2vw;
     line-height: 1.5;
     color: #FBD784;
-    padding-right: 30px;
+    padding-right: 60px;
     position: relative;
 }
 
@@ -407,10 +410,11 @@ h1 {
     background-image: url(./img/line_right.png);
     background-repeat: no-repeat;
     height: 20px;
-    width: 20%;
+    width: 50px;
     position: absolute;
     right: 0;
     top: 6px;
+    background-size: 40%;
 }
 
 .second .text {
@@ -479,7 +483,7 @@ h1 {
     color: #FBD784;
     text-decoration: none;
     position: relative;
-    padding-right: 30px;
+    padding-right: 60px;
 }
 
 .culture-flex-left a::after {
@@ -487,10 +491,11 @@ h1 {
     background-image: url(./img/line_right.png);
     background-repeat: no-repeat;
     height: 20px;
-    width: 20%;
+    width: 50px;
     position: absolute;
     right: 0;
     top: 6px;
+    background-size: 40%;
 }
 
 .get-started {
@@ -713,12 +718,12 @@ h1 {
 @media(max-width: 768px) {
 
     .container {
-        height: 800px;
+        height: 700px;
     }
 
-    /* .container-flex {
-        width: 100%;
-    } */
+    .follow {
+        padding-top: 70px;
+    }
 
     .header {
         align-items: center;
@@ -745,6 +750,10 @@ h1 {
 
     .navbar {
         padding-right: 35px;
+    }
+
+    .nusa-flex-right p {
+        font-size: 10px;
     }
 
     .nusa {
@@ -777,10 +786,18 @@ h1 {
         margin-left: 35px;
     }
 
+    .nusa-flex-right a {
+        padding-left: 40px;
+    }
+
     .nusa-flex-right a::after {
-        width: 40%;
-        top: 3px;
-        background-size: 35%;
+        width: 50px;
+        top: 1px;
+        background-size: 25%;
+    }
+
+    .second .text p {
+        font-size: 10px;
     }
 
     .container-flex .nusa {
@@ -806,15 +823,10 @@ h1 {
         height: 1px;
     }
 
-    .second a::after {
-        width: 40%;
-        top: 3px;
-        background-size: 35%;
-    }
-
 
     .bromo {
-        height: 500px;
+        height: 331px;
+        margin-top: 140px;
     }
 
     .bromo img {
@@ -822,16 +834,35 @@ h1 {
     }
 
     .bromo .left {
-        bottom: 230px;
+        bottom: 145px;
     }
 
     .bromo .right {
-        bottom: 230px;
+        bottom: 145px;
+    }
+
+    .second {
+        bottom: 20px;
+    }
+
+    .second a {
+        padding-left: 40px;
+    }
+
+    .second a::after {
+        width: 50px;
+        top: 1px;
+        background-size: 25%;
+    }
+
+    .culture-flex-right {
+        padding-top: 60px;
     }
 
     .culture-flex-left {
         flex: 100%;
         text-align: center;
+
     }
 
     .culture-flex-left h4 {
@@ -844,10 +875,19 @@ h1 {
         top: 45%;
     }
 
+    .culture-flex-left a {
+        padding-left: 40px;
+    }
+
+
     .culture-flex-left a::after {
-        width: 40%;
-        top: 3px;
-        background-size: 35%;
+        width: 50px;
+        top: 1px;
+        background-size: 25%;
+    }
+
+    .culture-flex-left p {
+        font-size: 10px;
     }
 
     .row button {
@@ -863,6 +903,11 @@ h1 {
         align-items: center;
         flex-direction: column;
         padding-top: 50px;
+        line-height: 30px;
+    }
+
+    .line img {
+        padding-top: 10px;
     }
 
     .footer {
@@ -900,22 +945,27 @@ h1 {
     .footer .services {
         display: inline-block;
         width: 30%;
+        text-align: center;
     }
 
     .footer .about {
         display: inline-block;
         width: 30%;
+        text-align: center;
     }
 
     .footer .help {
         display: inline-block;
         width: 30%;
+        vertical-align: top;
+        text-align: center;
     }
 
     .end {
         padding-top: 50px;
         align-items: center;
         flex-direction: column;
+        padding-left: 40px;
     }
 
     .end-right .fa-brands {
@@ -928,10 +978,18 @@ h1 {
         background-size: 5%;
     }
 
+    .scroll a {
+        padding-right: 35px;
+    }
+
     .scroll a::after {
-        width: 35%;
+        width: 30px;
         background-size: 25%;
+        top: 0px;
+        right: -5px;
+    }
+
+    .copyright {
+        padding-top: 32px;
     }
 }
-
-@media(max-width: 576px) {}
