@@ -714,6 +714,20 @@ h1 {
     opacity: 0.5;
 }
 
+@media(max-width: 1920px) {
+    .container {
+        height: 1520px;
+    }
+    .nusa{
+        top: -300;
+    }
+
+    .follow .text{
+        margin-left: 35px;
+    }
+}
+
+
 
 @media(max-width: 768px) {
 
