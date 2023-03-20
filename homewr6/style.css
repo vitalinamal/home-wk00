@@ -97,7 +97,7 @@ body {
 }
 
 .follow .text {
-    padding-left: 40px;
+    margin-left: 39px;
     padding-bottom: 20px;
 
 }
@@ -327,7 +327,7 @@ h1 {
     /* display: inline-block; */
     position: absolute;
     bottom: 405px;
-    left: 50px;
+    left: 80px;
 }
 
 .bromo .right {
@@ -335,7 +335,7 @@ h1 {
     /* display: inline-block; */
     position: absolute;
     bottom: 405px;
-    right: 50px;
+    right: 80px;
 
 }
 
@@ -792,7 +792,7 @@ h1 {
 
     .nusa-flex-right a::after {
         width: 50px;
-        top: 1px;
+        top: 4px;
         background-size: 25%;
     }
 
@@ -802,6 +802,7 @@ h1 {
 
     .container-flex .nusa {
         height: 350px;
+        margin-top: 60px;
     }
 
     .culture {
@@ -825,9 +826,10 @@ h1 {
 
 
     .bromo {
-        height: 331px;
-        margin-top: 140px;
+        height: 440px;
+        margin-top: 260px;
     }
+    
 
     .bromo img {
         width: 50%;
@@ -851,7 +853,7 @@ h1 {
 
     .second a::after {
         width: 50px;
-        top: 1px;
+        top: 4px;
         background-size: 25%;
     }
 
@@ -882,7 +884,7 @@ h1 {
 
     .culture-flex-left a::after {
         width: 50px;
-        top: 1px;
+        top: 4px;
         background-size: 25%;
     }
 
@@ -992,4 +994,96 @@ h1 {
     .copyright {
         padding-top: 32px;
     }
+}
+
+@media(max-width: 428px) {
+
+    .search input[type=search]{
+        ml10px
+    }
+    .follow .text {
+        margin-left: 42px;
+    }
+
+    .title h4 {
+        padding-left: 20px;
+    }
+
+    .nusa-flex-right h4 {
+        padding-left: 50px;
+    }
+
+    .bromo {
+        margin-top: 0px;
+        height: 244px;
+    }
+
+    .nusa-flex-right p {
+        font-size: 8px;
+    }
+
+    .second .text p {
+        font-size: 8px;
+    }
+
+    .second {
+        bottom: 10px;
+    }
+
+    .second .line h4 {
+        color: black;
+    }
+
+    .bromo .left {
+        bottom: 110px;
+        left: 20px;
+    }
+
+    .bromo .right {
+        bottom: 110px;
+        right: 20px;
+    }
+
+    .nusa-flex-right a::after {
+        width: 40px;
+        top: 1px;
+        background-size: 23%;
+    }
+
+    .nusa-flex-right a {
+        padding-right: 44px;
+    }
+
+    .second a {
+        padding-right: 44px;
+    }
+
+    .second a::after {
+        width: 40px;
+        top: 1px;
+        background-size: 23%;
+    }
+
+    .culture-flex-left a::after {
+        width: 40px;
+        top: 1px;
+        background-size: 23%;
+    }
+
+    .culture-flex-left a {
+        padding-right: 44px;
+    }
+
+    .culture-flex-left p {
+        font-size: 8px;
+    }
+
+    .culture-flex-left h4 {
+        padding-left: 45px;
+    }
+
+    .container-flex .nusa{
+        margin-top: 0;
+    }
+
 }
