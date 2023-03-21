@@ -8,7 +8,7 @@
     padding-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70vh 70vh;
+    grid-template-rows: auto auto;
     grid-row-gap: 50px;
     grid-template-areas:
         "header header"
@@ -19,7 +19,7 @@ header {
     grid-area: header;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 35vh 35vh;
+    grid-template-rows: auto auto;
     /* grid-row-gap: 20px;
     grid-column-gap: 20px; */
     grid-template-areas:
@@ -31,7 +31,7 @@ footer {
     grid-area: footer;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 35vh 35vh;
+    grid-template-rows: auto auto;
     /* grid-row-gap: 20px; */
     /* grid-column-gap: 20px; */
     grid-template-areas:
@@ -182,7 +182,6 @@ article {
 
     .container {
         width: 100%;
-        grid-template-rows: 148vh;
         grid-row-gap: 65px;
 
     }
@@ -190,7 +189,6 @@ article {
     header {
 
         grid-template-columns: 1.4fr 0.2fr 1.4fr;
-        grid-template-rows: 80vh;
         grid-template-areas:
             "aside aside aside"
             "main main main"
@@ -199,7 +197,6 @@ article {
 
     footer {
         grid-template-columns: 1.4fr 0.2fr 1.4fr;
-        grid-template-rows: 80vh;
         grid-template-areas:
             "aside aside aside"
             "main main main"
@@ -225,14 +222,6 @@ article {
 
     .picture img {
         width: 100%;
-    }
-
-    header {
-        grid-template-rows: 55vh;
-    }
-
-    footer {
-        grid-template-rows: 55vh;
     }
 
 }
