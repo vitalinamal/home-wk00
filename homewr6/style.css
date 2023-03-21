@@ -317,7 +317,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    height: 810px;
+    height: 870px;
     width: 100%;
     position: relative;
 }
@@ -326,7 +326,7 @@ h1 {
     text-decoration: none;
     /* display: inline-block; */
     position: absolute;
-    bottom: 405px;
+    bottom: 50%;
     left: 80px;
 }
 
@@ -334,7 +334,7 @@ h1 {
     text-decoration: none;
     /* display: inline-block; */
     position: absolute;
-    bottom: 405px;
+    bottom: 50%;
     right: 80px;
 
 }
@@ -718,12 +718,105 @@ h1 {
     .container {
         height: 1520px;
     }
-    .nusa{
+
+    .nusa {
         top: -300;
     }
 
-    .follow .text{
+    .bromo {
+        height: 1110px;
+    }
+
+    .second {
+        bottom: 160px;
+    }
+
+    .bromo .left {
+        bottom: 50%;
+    }
+
+    .bromo .right {
+        bottom: 50%;
+    }
+
+    .follow .text {
         margin-left: 35px;
+    }
+}
+
+@media(max-width: 820px) {
+
+    .container {
+        height: 800px;
+    }
+
+    .nusa {
+        top: -100px;
+    }
+
+    .bromo {
+        height: 471px;
+    }
+
+    .bromo .left {
+        bottom: 50%;
+    }
+
+    .follow .text {
+        margin-left: 45px;
+    }
+
+    .search input[type=search] {
+        font-size: 10px;
+        padding: 10px 20px 12px 40px;
+    }
+
+    .scroll a::after {
+        right: -20px;
+        top: 0px;
+    }
+
+    .nusa-flex-right h4 {
+        padding-left: 55px;
+    }
+
+    .nusa-flex-right a::after {
+        top: 4px;
+        background-size: 25%;
+    }
+
+    .second {
+        bottom: 35px;
+    }
+
+    .second a::after {
+        top: 4px;
+        background-size: 25%;
+    }
+
+    .culture-flex-left h4 {
+        padding-left: 55px;
+    }
+
+    .culture-flex-left a::after {
+        top: 4px;
+        background-size: 25%;
+    }
+
+    .nusa-flex-right p {
+        font-size: 10px;
+    }
+
+    .second .text p {
+        font-size: 10px;
+    }
+
+    .culture-flex-left p {
+        font-size: 10px;
+    }
+
+    #links li a {
+        font-size: 8px;
     }
 }
 
@@ -732,7 +825,7 @@ h1 {
 @media(max-width: 768px) {
 
     .container {
-        height: 700px;
+        height: 720px;
     }
 
     .follow {
@@ -759,11 +852,11 @@ h1 {
     }
 
     .follow .text {
-        padding-bottom: 0px;
+        margin-left: 35px;
     }
 
     .navbar {
-        padding-right: 35px;
+        /* padding-right: 35px; */
     }
 
     .nusa-flex-right p {
@@ -815,8 +908,8 @@ h1 {
     }
 
     .container-flex .nusa {
-        height: 350px;
-        margin-top: 60px;
+        height: 465px;
+
     }
 
     .culture {
@@ -843,7 +936,7 @@ h1 {
         height: 440px;
         margin-top: 260px;
     }
-    
+
 
     .bromo img {
         width: 50%;
@@ -991,7 +1084,8 @@ h1 {
 
     .search input[type=search] {
         background-position: 30px 7px;
-        background-size: 5%;
+        background-size: 10%;
+        padding: 6px 20px 12px 50px;
     }
 
     .scroll a {
@@ -1008,13 +1102,39 @@ h1 {
     .copyright {
         padding-top: 32px;
     }
+
+    #links li a {
+        font-size: 8px;
+    }
 }
 
 @media(max-width: 428px) {
 
-    .search input[type=search]{
-        ml10px
+    .container {
+        height: 550px;
     }
+
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .scroll {
+        padding-top: 0px;
+    }
+
+    .search input[type=search] {
+        font-size: 8px;
+    }
+
+    .title {
+        padding-top: 34px;
+        padding-left: 66px;
+    }
+
+    .follow {
+        padding-top: 40px;
+    }
+
     .follow .text {
         margin-left: 42px;
     }
@@ -1096,8 +1216,21 @@ h1 {
         padding-left: 45px;
     }
 
-    .container-flex .nusa{
-        margin-top: 0;
+    .container-flex .nusa {
+
+        height: 420px;
+    }
+
+    #links li a {
+        font-size: 8px;
+    }
+
+    #same {
+        font-size: 10px;
+    }
+
+    .footer .email form input[type=email]::placeholder {
+        font-size: 8px;
     }
 
 }
